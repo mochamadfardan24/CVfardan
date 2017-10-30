@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Menu.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<font color = "white">
+			<h1><center>CURRICULUM VITAE</h1></center></font>
+		</div>
+		<div class="menu">
+			<ul><nav>
+				<li><a href="menu.html">Halaman Utama</a></li>
+				<li><a href="cvbaru.html">Biodata</a></li>
+				<li><a href="ltbelakang.html">Riwayat Pendidikan</a></li>
+				<li><a href="kemampuan.html">Kemampuan</a></li>
+				<li><a href="form.html">Isi Form Biodata</a></li>				
+			</ul></nav>
+		</div>
+		<div class="badan">			
+			<div class="sidebar">
+		<h2>	
+		<center><font color = "white">Waktu</center></h2></font>
+<ul>		
+<div id="clockDisplay" class="clockStyle">
+
+</div>
+<script type="text/javascript" language="javascript">
+function renderTime(){
+ var currentTime = new Date();
+ var h = currentTime.getHours();
+ var m = currentTime.getMinutes();
+ var s = currentTime.getSeconds();
+ if (h == 0){
+  h = 24;
+   }
+   if (h < 10){
+    h = "0" + h;
+    }
+    if (m < 10){
+    m = "0" + m;
+    }
+    if (s < 10){
+    s = "0" + s;
+    }
+ var myClock = document.getElementById('clockDisplay');
+ myClock.textContent = h + ":" + m + ":" + s + "";    
+ setTimeout ('renderTime()',1000);
+ }
+ renderTime();
+</script>				
+				</ul>
+			</div>
+			
+			<div class="content">
+			<center>
+<h1>
+<font color = "#244065">BIODATA</h1></font>
+
+</center>
+
+<hr/>
+<center> <td rowspan="4"><img src="foto.jpg" alt="fardan" title="fardan" height="220px" width="300px">
+</td></center>
+<h3>
+<center>
+<table width="520px">
+<tr><h4>
+          <td> <font color = "#244065" ><b>Nama</b></td>
+          <td> <font color = "#244065">:</td>
+          <td> <font color = "#244065"><b>Mochamad Fardan Abdurahman</b></td>
+        </tr>
+<tr>
+          <td><font color = "#244065"><b>Tempat, Tanggal Lahir </b></td>
+          <td><font color = "#244065">:</td>
+          <td><font color = "#244065"><b>Bandung 24 April 1996</b></td>
+        </tr>
+		
+		<tr>
+          <td><font color = "#244065"><b>Agama</b></td>
+          <td><font color = "#244065">:</td>
+          <td><font color = "#244065"><b>Islam</b></td>
+        </tr>
+<tr>
+          <td><font color = "#244065"><b>Alamat</b></td>
+          <td><font color = "#244065">:</td>
+          <td><font color = "#244065"><b>Komplek Sanggar Hurip Jalan Sanggar Kencana 23 no 80-82</b></td>
+        </tr>
+		
+		<tr>
+          <td><font color = "#244065"><b>No. Telepon</b></td>
+          <td><font color = "#244065">:</td>
+          <td><font color = "#244065"><b>0857955955</b></td>
+        </tr>
+<tr>
+<td><font color = "#244065"><b>E-mail</b></td>
+          <td><font color = "#244065">:</td>
+          <td><font color = "#244065"><b>mochamadfardana24@gmail.com</b></td>
+        </tr></h4></font>
+		
+<tr>
+<td><font color = "#244065"><b>Hobby</b></td>
+          <td><font color = "#244065">:</td>
+          <td><font color = "#244065"><b>Otomotif</b></td>
+        </tr></h4></font></center>
+		
+</tbody>
+    </table>
+</td>
+</td>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			
+		</div>
+	</div>
+</body>
+</html>

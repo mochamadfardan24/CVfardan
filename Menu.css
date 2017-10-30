@@ -1,0 +1,91 @@
+body{
+ background:url(bg.jpg);
+}
+.transparent{
+ background:rgba(2, 2, 2, 0.5);
+ width: 50%;
+ height:350px;
+ padding:10px;
+ margin:0px auto;
+ color:#fff;
+}
+
+.wrap{
+	background: rgba(2, 2, 2, 0.5);
+	width: 1000px;
+	margin: 20px auto;
+}
+ 
+/*bagian header*/
+.wrap .header{
+	background: rgba(2, 2, 2, 0.2);
+	/*height: 50px;*/
+	padding: 2px 10px;
+}
+ 
+/*akhir header*/
+ 
+/*bagian menu*/
+.wrap .menu{
+	background: rgba(2, 2, 2, 0.1);
+}
+ 
+.wrap .menu ul{
+	padding: 0;
+	margin: 0;
+	background: rgba(2, 2, 2, 0.2);
+	overflow: hidden;
+}
+ 
+.wrap .menu ul li{
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+}
+/*akhir menu*/
+ 
+.clear{
+	clear: both;
+}
+ 
+.badan{
+	height: 750px;
+}
+
+/*bagian sidebar*/
+.wrap .badan .sidebar{
+	background: rgba(2, 2, 2, 0.1);
+	float: left;	
+	width: 25%;
+	height: 100%;
+}
+
+.clockStyle{
+
+background-color:#222;
+border:#999 2px inset;
+padding:10px;
+color:#fff;
+font-family:"verdana";
+font-size:16px
+font-weight:bold;
+letter-spacing:2px;
+display:inline;
+position: relative;
+left: 30px;
+}
+/*akhir sidebar*/
+ 
+.wrap .badan .content{
+	background: rgba(2, 2, 2, 0.4);
+	float: left;
+	height: 100%;
+	width: 75%;	
+}
+ 
+.wrap .footer{
+	background: rgba(2, 2, 2, 0.2);
+	width: 96%;
+	padding: 20px;
+	
+}

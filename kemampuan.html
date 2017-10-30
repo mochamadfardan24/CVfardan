@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Menu.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<font color = "white">
+			<h1><center>CURRICULUM VITAE</h1></center></font>
+		</div>
+		<div class="menu">
+			<ul><nav>
+				<li><a href="menu.html">Halaman Utama</a></li>
+				<li><a href="cvbaru.html">Biodata</a></li>
+				<li><a href="ltbelakang.html">Riwayat Pendidikan</a></li>
+				<li><a href="kemampuan.html">Kemampuan</a></li>
+				<li><a href="form.html">Isi Form Biodata</a></li>				
+			</ul></nav>
+		</div>
+		<div class="badan">			
+			<div class="sidebar">
+		<h2>	
+		<center><font color = "white">Waktu</center></h2></font>
+<ul>		
+<div id="clockDisplay" class="clockStyle">
+
+</div>
+<script type="text/javascript" language="javascript">
+function renderTime(){
+ var currentTime = new Date();
+ var h = currentTime.getHours();
+ var m = currentTime.getMinutes();
+ var s = currentTime.getSeconds();
+ if (h == 0){
+  h = 24;
+   }
+   if (h < 10){
+    h = "0" + h;
+    }
+    if (m < 10){
+    m = "0" + m;
+    }
+    if (s < 10){
+    s = "0" + s;
+    }
+ var myClock = document.getElementById('clockDisplay');
+ myClock.textContent = h + ":" + m + ":" + s + "";    
+ setTimeout ('renderTime()',1000);
+ }
+ renderTime();
+</script>				
+				</ul>
+			</div>
+			
+			<div class="content">
+			<center>
+<h1>
+<font color = "#244065">KEMAMPUAN</h1></font>
+
+</center>
+
+<hr/>
+<center><br> <td rowspan="4"><img src="balap.jpg" alt="fardan" title="fardan" height="220px" width="300px">
+</td></center></br>
+
+<table width="400px"><h3>
+      <tbody>
+	  <center>
+	  <h2><font color = "#244065">Bidang Otomotif</h2></center></font>
+	  <h4><p align ="center"><font color = "#244065">
+	  Dalam bidang otomotif  memiliki pengetahuan, keterampilan dan pengalaman bidang otomotif,
+	  tahap menganalisa suatu gangguan dan teknik perbaikannya sebagai dasar untuk pengembangan diri 
+	  dalam bidang pekerjaan dan praktek.
+	  </p></font></h4>
+  
+	  <center>
+	  <h2><font color = "#244065">Bidang Informatika</h2></center></font>
+	  <h4><p align ="center"><font color = "#244065">
+	  Kemampuan analisis dari aspek hardware dan software dari sistem komputer modern,
+	  Memiliki pengetahuan dalam pembuatan halnya teknik multimedia dalam pembuatan rancangan 
+	  video dan animasi.
+	  Membuat rancang desain berbasis grafis, editor video, dan editor foto.
+	  </p></font></h4>
+	  
+</h3>
+</td>
+</td>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

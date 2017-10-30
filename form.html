@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Menu.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<font color = "white">
+			<h1><center>CURRICULUM VITAE</h1></center></font> 
+		</div>
+		<div class="menu">
+			<ul><nav>
+				<li><a href="menu.html">Halaman Utama</a></li>
+				<li><a href="cvbaru.html">Biodata</a></li>
+				<li><a href="ltbelakang.html">Riwayat Pendidikan</a></li>
+				<li><a href="kemampuan.html">Kemampuan</a></li>
+				<li><a href="form.html">Isi Form Biodata</a></li>				
+			</ul></nav>
+		</div>
+		<div class="badan">			
+			<div class="sidebar">
+		<h2>	
+		<center><font color = "white">Waktu</center></h2></font>
+<ul>		
+<div id="clockDisplay" class="clockStyle">
+
+</div>
+<script type="text/javascript" language="javascript">
+function renderTime(){
+ var currentTime = new Date();
+ var h = currentTime.getHours();
+ var m = currentTime.getMinutes();
+ var s = currentTime.getSeconds();
+ if (h == 0){
+  h = 24;
+   }
+   if (h < 10){
+    h = "0" + h;
+    }
+    if (m < 10){
+    m = "0" + m;
+    }
+    if (s < 10){
+    s = "0" + s;
+    }
+ var myClock = document.getElementById('clockDisplay');
+ myClock.textContent = h + ":" + m + ":" + s + "";    
+ setTimeout ('renderTime()',1000);
+ }
+ renderTime();
+</script>				
+				</ul>
+			</div>
+			
+		<div class="content">
+		<form action="tampilbiodata.php" method="post">
+		
+		<tr><td><h3>
+		<center><table width="400px">
+		<h2><font color = "#244065">Isilah Biodata Dibawah Ini</h3></font>
+		<table border="4">
+		<tr><td>Nama Lengkap 	: <input type = text name=txtnama size=81></tr>
+		<tr><td>Nama Panggilan  : <input type = text name=txtnamapanggilan size=80></tr>
+		<tr><td>Alamat 			: <input type = text name=txtalamat size=88></tr>
+		<tr><td>No Telp			: <input type = text name=txttelepon size=13></tr>
+		<tr><td>Email			: <input type = text name=txtemail size=50></tr>
+		
+		<tr><td>Hobby			: </tr>
+		<td><input type = checkbox name = hobby value = Olahraga> Olahraga
+		<input type = checkbox name = hobby value = Programming> Programming
+		<input type = checkbox name = hobby value = Otomotif> Otomotif
+		<input type = checkbox name = hobby value = Editor> Editor</tr>
+		
+		<tr><td>Jenis Kelamin 	: </tr>
+		<td><input type = radio name = jk value=L> Laki-Laki
+		<input type = radio name = jk value=P> Perempuan</tr>
+		
+		<div>
+		<tr><td><input type = "submit" value = "Simpan">
+				<input type = "reset" value = "Reset"></tr>
+			</div></center>
+		</div>
+		<div class="clear"></div>
+			
+	</div>
+</body>
+</html>
